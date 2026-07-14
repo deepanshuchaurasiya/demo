@@ -313,26 +313,30 @@ src="https://www.facebook.com/tr?id=1118698246870532&ev=PageView&noscript=1"
             
             <div class="countdown-box">
                 <div id="countdown">
-                    Redirecting in <span id="timer">15</span> seconds...
+                    Redirecting in <span id="timer">2</span> seconds...
                 </div>
             </div>
         </div>
 
-        <script>
-        let timeLeft = 15;
-        const timer = document.getElementById("timer");
-        const countdown = setInterval(() => {
-            timeLeft--;
-            if (timeLeft > 0) {
-                timer.textContent = timeLeft;
-            } else {
-                clearInterval(countdown);
-                document.getElementById("countdown").innerHTML = "Redirecting...";
-                setTimeout(() => {
-                    window.location.href = "https://telegram.me/+2b2TR_uVkAUyYmY1";
-                }, 300);
-            }
-        }, 1000);
-        </script>
+<script>
+let timeLeft = 2; // 👈 yaha 2 kar diya
+
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+    timeLeft--;
+
+    if (timeLeft > 0) {
+        timer.textContent = timeLeft;
+    } else {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "Redirecting...";
+
+        setTimeout(() => {
+            window.location.href = "https://telegram.me/+2b2TR_uVkAUyYmY1";
+        }, 300);
+    }
+}, 1000);
+</script>
     </body>
 </html>
